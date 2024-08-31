@@ -26,6 +26,10 @@ header __"x-email"__, if record with provided __email__ not found server throw _
 - In case of missing header __"x-email"__ in http headers Server respond with __400(bad request)__ __MissingRequestHeaderException__
 - In case of wrong value in header __"x-email"__ Server respond with __404(not found)__ __UserNotFoundException__
 
+### Swagger endpoints
+- http://localhost:8081/api/v1/swagger-ui/index.html
+- http://localhost:8081/api/v1/v3/api-docs
+
 ### As Database used __Postgres__ 
 - you can start it in docker with follow command:
   ####  docker run --name my-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 -v pgdata:/var/lib/postgresql/data postgres
@@ -40,3 +44,4 @@ header __"x-email"__, if record with provided __email__ not found server throw _
 - ### Gradle 8.8, 
 - ### Spring Boot 3, 
 - ### PostgresDB 16(latest image)
+- ### OpenApi(Swagger)

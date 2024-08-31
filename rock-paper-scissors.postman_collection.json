@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "bed21f79-a9c6-433d-8a1e-96ef8c7b2094",
+		"name": "rock-paper-scissors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get statistics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-email",
+						"value": "your-email@example.com",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8081/api/v1/game/statistics",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"game",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "play game",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-email",
+						"value": "your-email@example.com",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"choice\":\"SCISSORS\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/v1/game/play",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"game",
+						"play"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
